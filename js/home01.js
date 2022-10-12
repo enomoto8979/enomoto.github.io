@@ -35,7 +35,7 @@ $(document).ready(function() {
         $('.titletxt').each( function(i){
 
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height()-10;
+            var bottom_of_window = $(window).scrollTop() + $(window).height()+50;
 
 
             if( bottom_of_window > bottom_of_object ){
@@ -58,7 +58,7 @@ $(document).ready(function() {
         $('.movenav1').each( function(i){
 
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var bottom_of_window = $(window).scrollTop() + $(window).height()+50;
 
 
             if( bottom_of_window > bottom_of_object ){
@@ -82,7 +82,7 @@ $(document).ready(function() {
         $('.movenav').each( function(i){
 
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var bottom_of_window = $(window).scrollTop() + $(window).height()+50;
 
 
 

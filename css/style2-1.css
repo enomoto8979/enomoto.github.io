@@ -314,7 +314,7 @@ footer{
     }
 
     .titletxt{
-        margin-left: 68vw;
+        margin-left: 70vw;
     }
 
     .nimg11  img{
@@ -444,7 +444,7 @@ footer{
     }
 
     .titletxt{
-        margin-left: 68vw;
+        margin-left: 70vw;
     }
 
     .nimg11 img{
@@ -479,6 +479,7 @@ footer{
 
     body{
         background: url(../img/sakura.gif) no-repeat;
+        background-size: contain;
     }
     header{
         padding-left: 1vw;
@@ -545,9 +546,7 @@ footer{
     .nimg11{
         display: flex;
     }
-    .nimg11 img{
-        height: 600px;
-    }
+
 
     .nav2{
         background: url(../img/homebg.png);
@@ -561,8 +560,123 @@ footer{
         font-size: x-large;
         font-family: cursive;
     }
-    .nimg12 img{
-        height: 600px;
+    .nimg12 img {
+        width: 62vw;
+        height: 70vh;
+    }
+
+    #ugj{
+        display: flex;
+        align-items: center;
+        background: url(../img/ugj.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 960px;
+    }
+
+
+    #ugj h1{
+        color: #ffffff;
+        margin-left: 1413px;
+        font-family: cursive;
+        font-size: 80px;
+        text-shadow: 4px 4px 2px rgb(41 5 5);
+
+    }
+    #kj{
+        display: flex;
+        align-items: center;
+        background: url(../img/kj.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 960px;
+    }
+
+
+    #kj h1{
+        color: #ffffff;
+        margin-left: 1413px;
+        font-family: cursive;
+        font-size: 80px;
+        text-shadow: 4px 4px 2px rgb(41 5 5);
+
+    }
+
+    #fit{
+        display: flex;
+        align-items: center;
+        background: url(../img/fit.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 960px;
+    }
+
+
+    #fit h1{
+        color: #ffffff;
+        margin-left: 1413px;
+        font-family: cursive;
+        font-size: 80px;
+        text-shadow: 4px 4px 2px rgb(41 5 5);
+
+    }
+
+    #njc{
+        display: flex;
+        align-items: center;
+        background: url(../img/njc.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 960px;
+    }
+
+
+    #njc h1{
+        color: #ffffff;
+        margin-left: 1413px;
+        font-family: cursive;
+        font-size: 80px;
+        text-shadow: 4px 4px 2px rgb(41 5 5);
+
+    }
+    footer{
+        background-color:#3e2f07;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        color: white;
+    }
+    .logoname{
+        font-family: system-ui;
+        font-size: x-large;
+    }
+    .dtxt{
+        display: flex;
+        font-family: system-ui;
+    }
+    .connect{
+        padding-left: 35px;
+    }
+    .copy{
+        display: flex;
+        align-items: center;
+        font-family: system-ui;
+    }
+    .copy h3 {
+          font-size: larger;
+      }
+    .npa{
+        display: flex;
+        align-items: center;
+    }
+    .nab{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
     }
 
 
