@@ -1,0 +1,570 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+    background: linear-gradient(180deg,#3e2f07,transparent 90%);
+    color: white;
+    top:0;
+}
+
+.ham {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(0,0,0,.3);
+    display: block;
+    position: relative;
+}
+
+.ham-origin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.ham-bar {
+    height: 2px;
+    width: 26px;
+    position: absolute;
+    background: white;
+    margin: -1px 0 0 -13px;
+    transition: all .5s;
+}
+
+.ham-bar--top {
+    transform: translateY(-6px);
+}
+
+.ham-bar--bottom {
+    transform: translateY(6px);
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked ~ .ham .ham-bar--middle {
+    opacity: 0;
+}
+
+#nav-toggle:checked ~ .ham .ham-bar--top {
+    transform: rotate(-45deg);
+}
+
+#nav-toggle:checked ~ .ham .ham-bar--bottom {
+    transform: rotate(45deg);
+}
+
+
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #3e2f07;
+    transform: translateX(100%);
+    transition: transform .5s;
+
+}
+.menu-item:hover{
+    background-color: #130c03;
+
+
+}
+
+#nav-toggle:checked ~ .menu {
+    transform: none;
+}
+
+
+
+.menu-item {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+}
+
+.slogn{
+    color: white;
+}
+
+/*------------------------------內文----------------------------------*/
+
+.movenav1{
+    opacity: 0;
+}
+.movenav{
+    opacity: 0;
+}
+
+
+.line h3{
+    margin: 0;
+    font-size: xx-large;
+    font-family: cursive;
+}
+.line p{
+    font-size: small;
+    font-family:  cursive;
+    border: 2px;
+    border-bottom: solid;
+    border-color: #6a4620;
+    width: 505px;
+    padding-bottom: 39px;
+    text-align: center;
+}
+.titlebg{
+    background: rgb(223 206 181 / 70%);
+    width: 100%;
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#bdun h1 {
+    color: #ffffff;
+    font-family: cursive;
+    text-shadow: 4px 4px 2px rgb(41 5 5);
+}
+#ugj h1 {
+    color: #ffffff;
+    font-family: cursive;
+    text-shadow: 4px 4px 2px rgb(41 5 5);
+}
+#kj h1 {
+    color: #ffffff;
+    font-family: cursive;
+    text-shadow: 4px 4px 2px rgb(41 5 5);
+}
+#fit h1 {
+    color: #ffffff;
+    font-family: cursive;
+    text-shadow: 4px 4px 2px rgb(41 5 5);
+}
+#njc h1 {
+    color: #ffffff;
+    font-family: cursive;
+    text-shadow: 4px 4px 2px rgb(41 5 5);
+}
+
+
+
+.titletxt{
+    opacity: 0;
+
+}
+.nav1{
+    background: url("../img/homebg.png");
+    display: flex;
+}
+.nav2{
+    background: url("../img/homebg.png");
+    display: flex;
+}
+
+footer{
+    background-color:#3e2f07;
+    display: flex;
+    justify-content: space-around;
+    padding: 3vw;
+    color: white;
+}
+.logoname{
+    font-family: system-ui;
+}
+.dtxt{
+    display: flex;
+    font-family: system-ui;
+}
+.connect{
+    padding-left: 5vw;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    font-family: system-ui;
+}
+
+
+
+/*-------------------------------尺寸-----------------------------------------*/
+
+@media screen and (min-width: 360px) {
+    body{
+        background: url(../img/sakura01.gif) no-repeat;
+        background-size: calc(100%);
+    }
+    header{
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 7vh;;
+        font-family: cursive;
+        font-size: larger;
+    }
+    .menu-item{
+        width: 47vw;
+
+    }
+    .logo h1{
+        font-family: monospace;
+        font-size: xx-large;
+    }
+    .slogn{
+        padding-left: 8vw;
+        padding-top: 13vh;
+        font-size: 1vw;
+    }
+    .jpmap img{
+        width: 96vw;
+        z-index: 10;
+        margin-top: -5vh;
+        margin-left: 2vw;
+    }
+    .arrow img{  z-index: 15;
+        width: 10vw;
+        margin-top: 15vh;
+        margin-left: 44vw;
+
+    }
+
+
+    #bdun{
+        display: flex;
+        align-items: center;
+        background: url(../img/byodouinBG.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #ugj{
+        display: flex;
+        align-items: center;
+        background: url(../img/ugj.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #kj{
+        display: flex;
+        align-items: center;
+        background: url(../img/kj.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #fit{
+        display: flex;
+        align-items: center;
+        background: url(../img/fit.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #njc{
+        display: flex;
+        align-items: center;
+        background: url(../img/njc.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #bdun h1{
+        font-size: 30px;
+    }
+    #ugj h1{
+        font-size: 30px;
+    }
+    #kj h1{
+        font-size: 30px;
+    }
+    #fit h1{
+        font-size: 30px;
+    }
+    #njc h1{
+        font-size: 30px;
+    }
+
+    .titletxt{
+        margin-left: 68vw;
+    }
+
+    .nimg11  img{
+        width: 100%;
+    }
+    .nimg12 img{
+        width: 100%;
+    }
+    .np11 {
+        padding: 10vw;
+    }
+    .np12 {
+        padding: 10vw;
+    }
+    .nab{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+/*-------------------------------------------------------*/
+@media screen and (min-width: 390px) {
+   body{
+       background: url(../img/sakura01.gif) no-repeat;
+       background-size: calc(122%);
+   }
+    header{
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 7vh;
+        font-family: cursive;
+        font-size: larger;
+
+    }
+    .menu-item{
+        width: 47vw;
+
+    }
+    .logo h1{
+        font-family: monospace;
+        font-size: xx-large;
+    }
+    .slogn{
+        padding-left: 10vw;
+        padding-top: 13vh;
+        font-size: 4vw;
+    }
+    .jpmap img{
+        width: 96vw;
+        z-index: 10;
+        margin-top: -1vh;
+        margin-left: 2vw;
+    }
+    .arrow img{
+        z-index: 15;
+        width: 15vw;
+        margin-top: 17vh;
+        margin-left: 45vw;
+    }
+
+
+
+    #bdun{
+        display: flex;
+        align-items: center;
+        background: url(../img/byodouinBG.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #ugj{
+        display: flex;
+        align-items: center;
+        background: url(../img/ugj.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #kj{
+        display: flex;
+        align-items: center;
+        background: url(../img/kj.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #fit{
+        display: flex;
+        align-items: center;
+        background: url(../img/fit.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #njc{
+        display: flex;
+        align-items: center;
+        background: url(../img/njc.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 60vh;
+    }
+    #bdun h1{
+        font-size: 30px;
+    }
+    #ugj h1{
+        font-size: 30px;
+    }
+    #kj h1{
+        font-size: 30px;
+    }
+    #fit h1{
+        font-size: 30px;
+    }
+    #njc h1{
+        font-size: 30px;
+    }
+
+    .titletxt{
+        margin-left: 68vw;
+    }
+
+    .nimg11 img{
+     width: 100%;
+ }
+    .nimg12 img{
+        width: 100%;
+    }
+    .np11 {
+        padding: 10vw;
+    }
+    .np12 {
+        padding: 10vw;
+    }
+    .nab{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logoname h1{
+        font-size: larger;
+    }
+    .connect p{
+        font-size: small;
+    }
+    .copy h3{
+        font-size: small;
+    }
+}
+/*-----------------------------------------------------*/
+@media screen and (min-width: 769px) {
+
+    body{
+        background: url(../img/sakura.gif) no-repeat;
+    }
+    header{
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        left: 85vw;
+        padding-top: 7vh;
+        font-family: cursive;
+        font-size: x-large;
+
+    }
+    .menu-item{
+        width: 15vw;
+
+    }
+    .logo h1{
+        font-family: monospace;
+        font-size: xx-large;
+    }
+    .slogn{
+        padding-left: 14vw;
+        padding-top: 20vh;
+        font-size: xx-large;
+    }
+    .jpmap img{
+        width: 45vw;
+        z-index: 10;
+        margin-top: -38vh;
+        margin-left: 27vw;
+    }
+   .arrow img{
+       z-index: 15;
+       width: 5vw;
+       margin-top: -7vh;
+       margin-left: 48vw;
+   }
+    #bdun{
+        display: flex;
+        align-items: center;
+        background: url(../img/byodouin.jpg) center center no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 960px;
+    }
+    #bdun h1{
+        font-size: 80px;
+    }
+    .np11 {
+
+        background: rgb(223 206 181 / 70%);
+        color: #140704;
+        padding: 35px;
+        margin: 50px;
+        font-size: x-large;
+        font-family: cursive;
+
+    }
+    .nimg11{
+        display: flex;
+    }
+    .nimg11 img{
+        height: 600px;
+    }
+
+    .nav2{
+        background: url(../img/homebg.png);
+
+    }
+    .np12 {
+        background: rgb(223 206 181 / 70%);
+        color: #140704;
+        padding: 35px;
+        margin: 50px;
+        font-size: x-large;
+        font-family: cursive;
+    }
+    .nimg12 img{
+        height: 600px;
+    }
+
+
+}
+
