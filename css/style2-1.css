@@ -250,6 +250,9 @@ footer{
         margin-left: 44vw;
 
     }
+    .line p{
+        width: 66vw;
+    }
 
 
     #bdun{
@@ -302,9 +305,11 @@ footer{
     }
     #ugj h1{
         font-size: 30px;
+        margin-left: 55vw;
     }
     #kj h1{
         font-size: 30px;
+        margin-left: 62vw;
     }
     #fit h1{
         font-size: 30px;
@@ -328,6 +333,16 @@ footer{
     }
     .np12 {
         padding: 10vw;
+    }
+    .np11 p{
+        background: rgb(223 206 181 / 70%);
+        color: #140704;
+        padding: 3vw;
+    }
+    .np12 p{
+        background: rgb(223 206 181 / 70%);
+        color: #140704;
+        padding: 3vw;
     }
     .nab{
         display: flex;
@@ -379,7 +394,9 @@ footer{
         margin-top: 17vh;
         margin-left: 45vw;
     }
-
+    .line p{
+        width: 66vw;
+    }
 
 
     #bdun{
@@ -432,9 +449,11 @@ footer{
     }
     #ugj h1{
         font-size: 30px;
+        margin-left: 55vw;
     }
     #kj h1{
         font-size: 30px;
+        margin-left: 62vw;
     }
     #fit h1{
         font-size: 30px;
@@ -456,8 +475,20 @@ footer{
     .np11 {
         padding: 10vw;
     }
+
     .np12 {
         padding: 10vw;
+    }
+
+    .np11 p{
+         background: rgb(223 206 181 / 70%);
+         color: #140704;
+         padding: 3vw;
+     }
+    .np12 p{
+        background: rgb(223 206 181 / 70%);
+        color: #140704;
+        padding: 3vw;
     }
     .nab{
         display: flex;
@@ -681,4 +712,6 @@ footer{
 
 
 }
+
+
 
