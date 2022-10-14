@@ -521,7 +521,7 @@ footer{
         display: flex;
         align-items: center;
         flex-direction: column;
-        left: 85vw;
+        left: 84vw;
         padding-top: 7vh;
         font-family: cursive;
         font-size: x-large;
@@ -536,8 +536,8 @@ footer{
         font-size: xx-large;
     }
     .slogn{
-        padding-left: 14vw;
-        padding-top: 20vh;
+        padding-left: 12vw;
+        padding-top: 17vh;
         font-size: xx-large;
     }
     .jpmap img{
