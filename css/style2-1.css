@@ -276,7 +276,7 @@ footer{
     #kj{
         display: flex;
         align-items: center;
-        background: url(../img/kj.jpg) center center no-repeat;
+        background: url(../img/kjcp.jpg) center center no-repeat;
         width: 100%;
         background-attachment: fixed;
         background-size: cover;
@@ -285,7 +285,7 @@ footer{
     #fit{
         display: flex;
         align-items: center;
-        background: url(../img/fit.jpg) center center no-repeat;
+        background: url(../img/fitcp.jpg) center center no-repeat;
         width: 100%;
         background-attachment: fixed;
         background-size: cover;
@@ -420,7 +420,7 @@ footer{
     #kj{
         display: flex;
         align-items: center;
-        background: url(../img/kj.jpg) center center no-repeat;
+        background: url(../img/kjcp.jpg) center center no-repeat;
         width: 100%;
         background-attachment: fixed;
         background-size: cover;
@@ -429,7 +429,7 @@ footer{
     #fit{
         display: flex;
         align-items: center;
-        background: url(../img/fit.jpg) center center no-repeat;
+        background: url(../img/fitcp.jpg) center center no-repeat;
         width: 100%;
         background-attachment: fixed;
         background-size: cover;
